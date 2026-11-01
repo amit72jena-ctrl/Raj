@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#170d28">
+    <title>For Devi jii | A Little World of Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+    <div id="particles"></div>
+    <div id="celebration"></div>
+
+    <!-- Navigation -->
+    <header class="topbar">
+        <div class="brand">M<span>♥</span></div>
+        <div class="top-label">MADE WITH LOVE</div>
+    </header>
+
+    <!-- PAGE 1: WELCOME -->
+    <section class="page active" id="page1">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                A LITTLE SURPRISE FOR YOU
+            </div>
+
+            <div class="heart-scene">
+                <div class="heart-orbit orbit-one"></div>
+                <div class="heart-orbit orbit-two"></div>
+                <div class="main-heart">♥</div>
+                <span class="heart-spark spark-one">✦</span>
+                <span class="heart-spark spark-two">✧</span>
+                <span class="heart-spark spark-three">♡</span>
+            </div>
+
+            <p class="small-heading">SOMEONE SPECIAL DESERVES SOMETHING SPECIAL</p>
+
+            <h1>Hey, <span class="gradient-text">Devi jii</span> 💗</h1>
+
+            <p class="hero-description">
+                Just a little effort for making you smile.
+            </p>
+
+            <button class="primary-button" onclick="goToPage(2)">
+                Please Open<span>♡</span>
+            </button>
+
+            <p class="bottom-note">A LITTLE EFFORT · A LOT OF FEELINGS</p>
+
+        </div>
+    </section>
+
+    <!-- PAGE 2: SPECIAL MESSAGE -->
+    <section class="page" id="page2">
+
+        <div class="content-card">
+
+            <div class="section-icon">💌</div>
+
+            <p class="eyebrow">A MESSAGE FROM MY HEART</p>
+
+            <h2>Something I want<br>you to <span class="gradient-text">know.</span></h2>
+
+            <div class="divider"><span>♡</span></div>
+
+            <p class="message-text">
+                 you are someone truly special to me.
+                Your smile makes ordinary moments beautiful,
+                and your presence makes my world brighter.
+                Sometimes, words aren't enough to explain
+                how much you mean to me and how much I love you.
+                So today, I made this little something
+                just for you. 💗 I wiil never say anythig like that again.
+            </p>
+
+            <div class="quote-box">
+                "You are the person who makes my world brighter, and make
+                 me feel a little more beautiful."
+            </div>
+
+            <button class="primary-button" onclick="goToPage(3)">
+                There's More <span>♡</span>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- PAGE 3: LITTLE LOVE STORY -->
+    <section class="page" id="page3">
+
+        <div class="story-container">
+
+            <p class="eyebrow">LITTLE THINGS THAT MATTER</p>
+
+            <h2>Why you're <span class="gradient-text">special</span></h2>
+
+            <p class="section-description">
+                It's the little things that make a person unforgettable.
+            </p>
+
+            <div class="story-grid">
+
+                <article class="story-card" style="--delay: 0s">
+                    <div class="card-number">01</div>
+                    <div class="story-icon">😊</div>
+                    <h3>Your Smile</h3>
+                    <p>
+                        Your smile has a special way of making
+                        an ordinary day feel a little brighter.
+                    </p>
+                    <div class="card-heart">♡</div>
+                </article>
+
+                <article class="story-card" style="--delay: .15s">
+                    <div class="card-number">02</div>
+                    <div class="story-icon">🌷</div>
+                    <h3>Your Presence</h3>
+                    <p>
+                        Even the simplest moments can become
+                        beautiful memories.
+                    </p>
+                    <div class="card-heart">♡</div>
+                </article>
+
+                <article class="story-card" style="--delay: .3s">
+                    <div class="card-number">03</div>
+                    <div class="story-icon">💖</div>
+                    <h3>You, Meera</h3>
+                    <p>
+                        You are a special part of my world,
+                        and I wanted to make you smile.
+                    </p>
+                    <div class="card-heart">♡</div>
+                </article>
+
+            </div>
+
+            <button class="primary-button" onclick="goToPage(4)">
+                One Last Thing <span>💌</span>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- PAGE 4: APOLOGY -->
+    <section class="page" id="page4">
+
+        <div class="apology-container">
+
+            <div class="apology-heart">♥</div>
+
+            <p class="eyebrow">FROM THE BOTTOM OF MY HEART</p>
+
+            <h2>pleasee..<br><span class="gradient-text">forgive your chote</span> 🥺</h2>
+
+            <p class="apology-message">
+                If I've hurt you or made you feel sad,
+                I'm truly sorry. I never want to take
+                your feelings for granted.
+                You matter to me, Meera, and I hope you understand my jokes.
+                I made this little surprise only for you, hoping
+                it might bring a smile to your face. ❤️
+            </p>
+
+            <div class="button-area" id="buttonArea">
+
+                <button class="yes-button" id="yesButton" onclick="sayYes()">
+                    YES ❤️
+                </button>
+
+                <button class="no-button" id="noButton" type="button">
+                    NO 💔
+                </button>
+
+            </div>
+
+            <p class="playful-note" id="playfulNote">
+                Psst... that little NO button is feeling shy 🙈
+            </p>
+
+            <p class="bottom-note">WHATEVER YOU FEEL, YOUR FEELINGS MATTER. 💗</p>
+
+        </div>
+    </section>
+
+    <!-- FINAL CELEBRATION -->
+    <div class="success-overlay" id="successOverlay">
+
+        <div class="success-card">
+
+            <div class="success-heart">💖</div>
+
+            <p class="eyebrow">MY HEART IS SMILING</p>
+
+            <h2>Thank You, <span class="gradient-text"></span></h2>
+
+            <p class="success-message">
+                🥹❤️<br><br>
+                Your smile means a lot to me.
+                I'm grateful you heard me out!🤗💗
+                Thanks a lot, Love you..💖
+            </p>
+
+            <button class="primary-button" onclick="restartWebsite()">
+                Experience Again ↻
+            </button>
+
+            <p class="bottom-note">MADE WITH LOVE, JUST FOR YOU.</p>
+
+        </div>
+
+    </div>
+
+    <!-- Page indicators -->
+    <nav class="page-dots" aria-label="Page progress">
+        <button class="page-dot active-dot" aria-label="Welcome page"
+            onclick="goToPage(1)"></button>
+        <button class="page-dot" aria-label="Message page"
+            onclick="goToPage(2)"></button>
+        <button class="page-dot" aria-label="Story page"
+            onclick="goToPage(3)"></button>
+        <button class="page-dot" aria-label="Apology page"
+            onclick="goToPage(4)"></button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
